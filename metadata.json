@@ -1,0 +1,8 @@
+{
+  "name": "Abhishek Verma Connect",
+  "description": "Official app of Aditya Kumar. Connect, chat, and stay updated with the latest news and media.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
