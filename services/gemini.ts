@@ -1,3 +1,4 @@
+
 import { GoogleGenAI, Chat, GenerateContentResponse, Part } from "@google/genai";
 
 // Initialize the Gemini API client
@@ -67,7 +68,7 @@ export const generateImage = async (
             imageSize: "1K" // Default for preview
           }
         }
-      } as any); // Type assertion due to new imageConfig types
+      });
 
       for (const part of response.candidates?.[0]?.content?.parts || []) {
         if (part.inlineData) {
